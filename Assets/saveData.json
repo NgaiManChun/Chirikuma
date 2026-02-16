@@ -1,0 +1,18 @@
+{
+    "stages": [
+        {
+            "m_id": 0,
+            "m_scenePath": "Scene_Title",
+            "m_challengeState": 0,
+            "m_name": "タイトル",
+            "m_context": "タイトル画面へ"
+        },
+        {
+            "m_id": 1,
+            "m_scenePath": "Scene_Debug",
+            "m_challengeState": 0,
+            "m_name": "Debug",
+            "m_context": "Debug"
+        }
+    ]
+}

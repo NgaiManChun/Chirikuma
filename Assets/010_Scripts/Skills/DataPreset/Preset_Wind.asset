@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5eb5aeaef7b2bd42972c4cac68df441, type: 3}
+  m_Name: Preset_Wind
+  m_EditorClassIdentifier: 
+  m_skillPrefab: {fileID: 3353260386733383413, guid: 15baf774d22517644a0c83d61e2e18cf, type: 3}
+  m_keyCode: 113
+  m_name: "\u98A8"
+  m_cooltime: 0
+  m_spawnOffset: 1

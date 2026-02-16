@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3186fce8060288c42a535e3c4256b536, type: 3}
+  m_Name: Preset_Airblower
+  m_EditorClassIdentifier: 
+  m_skillPrefab: {fileID: 0}
+  m_keyCode: 116
+  m_name: "\u9001\u98A8"
+  m_cooltime: 0
+  m_offset: 2.5
+  m_rangeScale: {x: 5, y: 2, z: 1}
+  m_vacuumTargetLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  m_obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 0

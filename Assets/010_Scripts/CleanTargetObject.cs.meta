@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f1daa9b6e2c650042b404f7fb9527b2e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_cleaningP: {instanceID: 0}
+  - m_completeP: {instanceID: 0}
+  - m_dustPrefab: {fileID: 8728448002251049880, guid: 519eb967a41813542b86acd01e8e6ee5, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

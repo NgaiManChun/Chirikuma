@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8e0faabd59d27d479fc5ae9d82407a7, type: 3}
+  m_Name: StageStorage
+  m_EditorClassIdentifier: 
+  stages:
+  - m_id: 0
+    m_scenePath: Scene_Title
+    m_challengeState: 0
+    m_name: "\u30BF\u30A4\u30C8\u30EB"
+    m_context: "\u30BF\u30A4\u30C8\u30EB\u753B\u9762\u3078"
+  - m_id: 1
+    m_scenePath: Scene_Debug
+    m_challengeState: 2
+    m_name: Debug
+    m_context: Debug

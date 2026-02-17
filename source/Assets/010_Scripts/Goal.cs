@@ -43,8 +43,6 @@ public class Goal : MonoBehaviour
     private bool isPlayedStarAnimation = false;
 
     private GameManager gameManager;
-
-
     public Camera FarCamera => farCamera;
     public Camera NearCamera => nearCamera;
 
@@ -112,8 +110,6 @@ public class Goal : MonoBehaviour
 
     public void ShowResult()
     {
-        
-        
         bool clear = true;
         foreach (Rumba cleaner in gameManager.cleaners)
         {

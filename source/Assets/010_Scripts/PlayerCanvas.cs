@@ -24,14 +24,12 @@ public class PlayerCanvas : MonoBehaviour
 
     private GameManager gameManager;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         gameManager = FindFirstObjectByType<GameManager>();
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         SetTime(gameManager.GetElapsedTime(), gameManager.GetLimitTime());

@@ -17,12 +17,6 @@ public class Rope : MonoBehaviour, IRaiseAction
     private UnityEvent<float> updateAmount;
     [SerializeField]
     private UnityEvent<float> updateT;
-    //[SerializeField]
-    //private Transform p0;
-    //[SerializeField]
-    //private Transform p1;
-    //[SerializeField] 
-    //private GameObject target;
 
     private float startDistance = 0;
     private float distance = 0;
@@ -31,17 +25,6 @@ public class Rope : MonoBehaviour, IRaiseAction
     private Vector3 targetStartPosition;
     private LineRenderer lineRenderer;
 
-    //[SerializeField]
-    //private Vector3 force = Vector3.zero;
-    //[SerializeField]
-    //private Transform targetPosition;
-    //[SerializeField]
-    //private int remain = 40;
-
-    //private Rigidbody rb;
-    //public ConfigurableJoint joint;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
@@ -56,33 +39,11 @@ public class Rope : MonoBehaviour, IRaiseAction
                 lineRenderer.SetPosition(i + 1, anchors[i].transform.position);
             }
         }
-        
-
-        //EndDistance = Vector3.Distance(target.transform.position, p1.position);
-        //targetStartPosition = target.transform.position;
-
-
-        //rb = GetComponent<Rigidbody>();
-        //joint = GetComponent<ConfigurableJoint>();
-        //remain--;
-        //if (remain > 0)
-        //{
-        //    GameObject next = Instantiate(gameObject);
-        //    next.transform.position = transform.position - transform.up;
-        //    next.GetComponent<Rope>().joint.connectedBody = rb;
-        //}
-        //else {
-        //    transform.position = targetPosition.position;
-        //}
     }
 
-    // Update is called once per frame
     void Update()
     {
         distance = Vector3.Distance(transform.position, anchors[0].transform.position);
-        //amount = distance - startDistance;
-        //amount = Mathf.Max(distance - startDistance, amount);
-        //amount = Mathf.Min(amount, maxAmount);
         amount = Mathf.Clamp(distance - startDistance, amount, maxAmount);
         if (lineRenderer)
         {
@@ -100,29 +61,16 @@ public class Rope : MonoBehaviour, IRaiseAction
         { 
             updateT.Invoke(amount / maxAmount); 
         }
-        
-        //float distance = Vector3.Distance(transform.position, p0.position);
-        //if (distance > StartDistance && distance - StartDistance < EndDistance)
-        //{
-        //    target.transform.position = targetStartPosition + (p1.position - targetStartPosition).normalized * (distance - StartDistance);
-        //}
-        //if (lineRenderer)
-        //{
-        //    lineRenderer.SetPosition(0, transform.position);
-        //    lineRenderer.SetPosition(2, target.transform.position);
-        //}
-        //if (remain == 0)
-        //    rb.AddForce(force, ForceMode.VelocityChange);
     }
 
     public void Drop()
     {
-        //throw new System.NotImplementedException();
+
     }
 
     public void Raise()
     {
-        //throw new System.NotImplementedException();
+
     }
 
     public bool CanRaise()
